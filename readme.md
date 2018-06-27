@@ -39,6 +39,12 @@ Seguir el estandar Cron.
 
 4. Hacer lo mismo para la función DeleteSnapshot
 
+5. Etiquetar un volumen para programar su backup
+
+La función hara una busqueda de todos los volumenes que contengan el Tag "Backup" distinto de vacio. Esos serán los volumenes que se guardarán.
+
+Nota importante: La instancia no debe contener nombres con tildes. Ej. "Ambiente de producción"
+
 ## Built With
 
 Se hace uso del AWS SDK for Python (Boto). Más información [aquí](https://aws.amazon.com/es/developers/getting-started/python/)
